@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #262626;
+            padding:10px;
+        }
+        .gallery{
+            columns:8;
+            column-gap: 16px;
+        }
+        img{
+            width:100%;
+            border-radius: 5px;
+        }
+        .grid-images{
+            display:inline-block;
+            margin-bottom: 16px;
+            position: relative;
+        }
+        @media(max-width:2500px)
+        {
+            .gallery{
+                columns: 3;
+            }
+        }
+        @media(max-width:912px)
+        {
+            .gallery{
+                columns: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="grid-images" id="img1">
+            <img src="galley_images/anastase-maragos-7kEpUPB8vNk-unsplash.jpg">
+        </div>
+        <div class="grid-images" id="img2">
+            <img src="galley_images/boxed-water-is-better-cXJCpV2Jv1Y-unsplash.jpg">
+        </div>
+        <div class="grid-images" id="img3"><img src="galley_images/charles-gaudreault-xXofYCc3hqc-unsplash.jpg"></div>
+        <div class="grid-images" id="img4"><img src="galley_images/edgar-chaparro-sHfo3WOgGTU-unsplash.jpg"></div>
+        <div class="grid-images" id="img5"><img src="galley_images/risen-wang-20jX9b35r_M-unsplash.jpg"></div>
+        <div class="grid-images" id="img6"><img src="galley_images/sushil-ghimire-5UbIqV58CW8-unsplash.jpg"></div>
+        <div class="grid-images" id="img7"><img src="galley_images/sven-mieke-MsCgmHuirDo-unsplash.jpg"></div>
+        <div class="grid-images" id="img8"><img src="galley_images/victor-freitas-WvDYdXDzkhs-unsplash.jpg"></div>
+    </div>
+</body>
+</html>
